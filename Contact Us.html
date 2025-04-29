@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<!-- font awesome -->
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <style>
+        .offer{
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    background-color: #1D232C;
+    color: white;
+    padding: 8px;
+    font-size:large;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: white;
+}
+    
+.navbar_list{
+    display: flex;
+    gap: 30px;
+}
+.navbar_link{
+    text-decoration: none;
+}
+.navbar_link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+        .navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: white;
+}
+    
+.navbar_list{
+    display: flex;
+    gap: 30px;
+}
+.navbar_link{
+    text-decoration: none;
+}
+.navbar_link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+        .container{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .contact-form{
+            background-color: #1D232C;
+    color: #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60vw;
+    margin: auto;
+    padding: 5vw;
+    padding-right: 10vw;
+    margin-top: 10px;
+        }
+        .contact-form h2{
+            margin-bottom: 1vw;
+        }
+        .contact-form label{
+            display: block;
+    margin-bottom: 1vw;
+        }
+        .contact-form input[type="text"], .contact-form textarea {
+    width: 100%;
+    padding: 2vw;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 1vw;
+}
+.contact-form textarea {
+    resize: vertical;
+    height: 10vh;
+}
+.contact-form input[type="submit"] {
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #0056b3;
+}
+.news{
+    font-size: 2vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid #1D232C 3px;
+}
+.news button{
+    margin-top: 10px;
+    font-size: 1.8vw;
+    color: #E2E1E1;
+    background-color: #1D232C;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+.footer{
+    font-size: 2vw;
+    margin-top: 5vw;
+    padding: 40px;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    box-sizing: border-box;
+}
+.footer_container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-box-1{
+    display: flex;
+    flex-direction: column;
+}
+.footer-icon-container{
+    width: 40px;
+    margin: 2vw;
+    display: flex;
+    gap: 77px;
+    cursor: pointer;
+}
+   
+ 
+
+
+    </style>
+</head>
+<body>
+     <!-- offer -->
+     <div class="offer">
+        <p>Sign Up and GET 20% OFF for your first Order </p>
+        <p id="offerHide" style="cursor: pointer;">X</p>
+    </div>
+    <!-- navbar -->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar_list">
+            <p class="navbar_link"><a href="index.html"></a>Home</p>
+            <p class="navbar_link"><a href="#New Arrivals"></a>New Arrival</p>
+            <p class="navbar_link"><a href="#Most Wanted"></a>Most Wanted</p>
+            <p class="navbar_link"><a href="Collections.html"></a>Collections</p>
+            <p class="navbar_link"><a href="Contact Us.html"></a>Contact Us</p>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <label>Name:</label>
+                <input type="text" id="name" required>
+                <label>Email:</label>
+                <input type="text" id="email" required>
+                <label>Message:</label>
+                <textarea id="message" required></textarea>
+                <input type="submit" value="submit">
+    
+            </form>
+    
+        </div>
+     </div>
+     <!-- news -->
+     <div class="news">
+        <h2>Join our News Letter</h2>
+        <p style="text-align: center;">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div style="margin-top: 10px;">
+            <input class="search">
+        </div>
+    
+    <div>
+    <button>Subscribe <i class="fa-solid fa-arrow-right" style="color: #f7f7f7;"></i></button>
+</div>
+</div>
+<!-- footer -->
+<div class="footer">
+<div class="footer_container">
+    <div class="footer-box-1">
+        <h2 class="headingText">Nostra</h2>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="footer-icon-container">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </div>
+
+</div>
+<p class="subtitle">@2025 Nostra.com</p>
+
+</div>
+
+    
+</body>
+</html>
